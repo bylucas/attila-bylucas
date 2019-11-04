@@ -1,0 +1,40 @@
+//Extras
+// PAGE SCROLL CURRENTLY IN THE FOOTER
+
+    $blue: #3eb0ef;
+    $green: #a4d037;
+    $purple: #ad26b4;
+    $yellow: #fecd35;
+    $red: #f05230;
+    $darkgrey: #15171A;
+    $midgrey: #738a94;
+    $lightgrey: #c5d2d9;
+    $whitegrey: #e5eff5;
+    $pink: #fa3a57;
+    $brown: #a3821a;
+    $darkmode: shade($darkgrey, 20%);
+
+.back-to-top {
+  //font-family: $light-font;
+  text-align: center;
+  @include border-left-radius(5px);
+  position: fixed;
+  z-index: 2000;
+  bottom: 2px;
+  right: 0;
+  background: $color-black;
+  display: none;
+  padding: .2rem .9rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $color-white;
+  opacity: .8;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $color-white;
+    opacity: 1;
+  }
+}

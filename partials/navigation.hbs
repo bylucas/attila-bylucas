@@ -1,0 +1,22 @@
+<nav id="menu">
+	<a class="close-button">{{t "Close"}}</a>
+	<div class="nav-wrapper">
+		<p class="nav-label">{{t "Menu"}}</p>
+		<ul>
+			{{#foreach navigation}}
+			<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+			{{/foreach}}
+
+		</ul>
+		  <div class="social-menu">
+			
+			<span class="nav-twitter"><a href="https://www.linkedin.com/in/bylucas/" title="{{@site.twitter}}"><i class="icon icon-linkedin"></i></a></span>
+			
+			<span class="nav-facebook"><a href="{{facebook_url}}" title="https://www.behance.net/howardl"><i class="icon icon-behance"></i></a></span>
+
+			<span class="nav-facebook"><a href="{{facebook_url}}" title="https://github.com/bylucas"><i class="icon icon-github"></i></a></span>
+            
+			
+		</div>
+	</div>
+</nav>
